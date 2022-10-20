@@ -1,13 +1,13 @@
 
 <?php
-  require_once "config.php";
+  require_once "../config.php";
 
-  $server_name = 'localhost';
-  $username = 'guest';
-  $password = 'guest123';
-  $db_name = 'fuchsia';
+  // $server_name = 'localhost';
+  // $username = 'guest';
+  // $password = 'guest123';
+  // $db_name = 'fuchsia';
 
-  $conn = mysqli_connect($server_name, $username, $password, $db_name);
+  // $conn = mysqli_connect($server_name, $username, $password, $db_name);
 
   if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
@@ -62,7 +62,10 @@
 
 
     if (mysqli_query($conn, $sql)) {
+      $home = 'http://localhost/fuchsia/index.php';
       echo "New record created successfully";
+      header("location: $home");
+      exit();
     } else {
       echo "Error: " . $sql . "<br>" . $conn->error;
     }
