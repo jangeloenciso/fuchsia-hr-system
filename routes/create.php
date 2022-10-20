@@ -1,13 +1,7 @@
-
 <?php
+  $PageTitle="Add New Employee";
+  include_once('../templates/header.php'); 
   require_once "../config.php";
-
-  // $server_name = 'localhost';
-  // $username = 'guest';
-  // $password = 'guest123';
-  // $db_name = 'fuchsia';
-
-  // $conn = mysqli_connect($server_name, $username, $password, $db_name);
 
   if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
@@ -97,3 +91,6 @@
 
   <input type="submit" name="submit" value="Submit">    
 </form>
+<?php
+include_once('../templates/footer.php');
+?>
