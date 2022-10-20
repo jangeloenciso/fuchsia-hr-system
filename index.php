@@ -9,8 +9,9 @@
 </head>
 <body>
   <h1>Fuchsia HR</h1>
-  <a href="routes/create.php" class="btn btn-success pull-right"><i class="fa fa-plus"></i> Add New Employee</a>
   <br>
+  <a href="routes/create.php"><button>Add</button></a>
+  <a href="routes/update.php"><button>Update</button></a>
     <a href="routes/view.php"><button>View</button></a>
 </body>
 </html>

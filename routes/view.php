@@ -9,7 +9,6 @@
 </head>
 <body>
   <h1>Fuchsia HR</h1>
-  <a href="routes/create.php"> Add New Employee</a>
   <br>
   <?php
     require_once "../config.php";
