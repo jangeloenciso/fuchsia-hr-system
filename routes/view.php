@@ -39,7 +39,6 @@
               echo "<td>" . $row['email_address'] . "</td>";
               echo "<td>" . $row['company_position'] . "</td>";
               echo "<td>" . $row['monthly_salary'] . "</td>";
-              echo '<td><a href="update.php?id='. $row['id'] .'" >Edit</a></td>';
               echo '<td><a href="delete.php?id='. $row['id'] .'">Delete</a></td>';
               echo "</tr>";
             }
