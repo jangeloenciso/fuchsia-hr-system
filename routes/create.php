@@ -12,7 +12,7 @@
       $last_name = addslashes($_POST['last_name']);
       $age = addslashes($_POST['age']);
       $gender = addslashes($_POST['gender']);
-      $address = addslashes($_POST['address']);
+      $home_address = addslashes($_POST['home_address']);
       $contact_number = addslashes($_POST['contact_number']);
       $email_address = addslashes($_POST['email_address']);
       $company_position = addslashes($_POST['company_position']);
@@ -22,7 +22,7 @@
       $last_name = $_POST['last_name'];
       $age = $_POST['age'];
       $gender = $_POST['gender'];
-      $address = $_POST['address'];
+      $home_address = $_POST['home_address'];
       $contact_number = $_POST['contact_number'];
       $email_address = $_POST['email_address'];
       $company_position = $_POST['company_position'];
@@ -35,7 +35,7 @@
       `last_name` ,
       `age` ,
       `gender` ,
-      `address` ,
+      `home_address` ,
       `contact_number` ,
       `email_address` ,
       `company_position` ,
@@ -47,7 +47,7 @@
       '$last_name', 
       '$age', 
       '$gender', 
-      '$address', 
+      '$home_address', 
       '$contact_number', 
       '$email_address', 
       '$company_position', 
@@ -78,7 +78,7 @@
   <br>
   <input type="text" name="gender" placeholder="Gender" required>
   <br>
-  <input type="text" name="address" placeholder="Address" required>
+  <input type="text" name="home_address" placeholder="Address" required>
   <br>
   <input type="text" name="contact_number" placeholder="Contact Number" required>
   <br>

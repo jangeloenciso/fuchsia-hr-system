@@ -34,7 +34,7 @@
               echo "<td>" . $row['last_name'] . "</td>";
               echo "<td>" . $row['age'] . "</td>";
               echo "<td>" . $row['gender'] . "</td>";
-              echo "<td>" . $row['address'] . "</td>";
+              echo "<td>" . $row['home_address'] . "</td>";
               echo "<td>" . $row['contact_number'] . "</td>";
               echo "<td>" . $row['email_address'] . "</td>";
               echo "<td>" . $row['company_position'] . "</td>";
