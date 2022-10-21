@@ -56,9 +56,7 @@
 
 
     if (mysqli_query($conn, $sql)) {
-      $home = 'http://localhost/fuchsia/index.php';
       echo "New record created successfully";
-      header("location: $home");
       exit();
     } else {
       echo "Error: " . $sql . "<br>" . $conn->error;
