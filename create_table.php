@@ -11,7 +11,7 @@ if($conn === false){
 }
 echo $username . " Connected Succesfully! <br>";
 
-$sql = "CREATE TABLE employees2 (
+$sql = "CREATE TABLE employees (
         id INT NOT NULL AUTO_INCREMENT ,
         first_name VARCHAR( 40 ) NOT NULL,
         last_name VARCHAR( 40 ) NOT NULL ,
