@@ -66,15 +66,9 @@ include_once('../templates/header.php');
         echo '<div class="bot-5">';
         echo 'Email: ' . '<mark class="mrk">'. $row['email_address'] . '</mark>';
         echo '</div>';
-
+        echo "</div>";
         echo "</div>";
 
-
-        echo "</div>";
-
-
-
-        echo '<a href="delete.php?id=' . $row['id'] . '"><button type="button" class="delete-btn">Delete</button></a>';
         echo "<br />";
         echo "<br />";
         echo "<br />";
