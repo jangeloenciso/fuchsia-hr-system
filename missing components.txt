@@ -1,0 +1,4 @@
+Things left to do:
+
+1. Directing from login.php to employee.php OR admin.php
+2. Delete button function
