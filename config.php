@@ -8,5 +8,5 @@
   if($conn === false){
       die("ERROR: Could not connect. " . mysqli_connect_error());
   }
-  echo "<p style='color: #205a68; font-family: 'League Spartan''>" . "Fuchsia Connected Succesfully" . "</p>";
+  // echo "<p style='color: #205a68; font-family: 'League Spartan''>" . "Fuchsia Connected Succesfully" . "</p>";
 ?>
