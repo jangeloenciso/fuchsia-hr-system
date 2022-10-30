@@ -1,0 +1,46 @@
+---------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------
+
+Anak ng Fuchsia Group - CEIT-37-501P
+
+GROUP LEADER:
+dela Cruz , Marithe D. [2020-100616] 
+
+
+MEMBERS:
+Bautista, Matthew P. [2020-100611]
+Enciso, Joseph Angelo [2021-110942]
+Fontanilla, Justin Marley C. [2020-100619]
+Lachica, Mark B. [2020-100058]
+Velarde, Jorge Robert B. [2020-100649]
+
+
+
+
+
+Thank you for viewing our guide!
+
+This HR System uses custom fonts downloaded from the internet as shown below:
+"Glacial Indifference" and "League Spartan."
+
+-Please install the fonts located in the folder "FONTS USED" first(if not yet installed) for the best website visual experience.
+Please access the system by first opening "login.php," as it is the intended starting point when accessing the HR system.
+
+
+
+					Sincerely,
+				   Anak ng Fuchsia Group
+
+---------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------
+
+------------------------------!!!NOTICE!!!-------------------------------------------
+
+We have created pre-made accounts that must be used in the login page of our system.
+
+To access the main system, please use any of the following accounts:
+[1] user: admin		pass: admin123
+[2] user: employee	pass: employee123
+
+Note: Please keep in mind that while the admin account has full record management 
+capabilities in this system, the employee account can only view records.
