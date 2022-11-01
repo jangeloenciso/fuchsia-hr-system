@@ -20,7 +20,7 @@ $retval = mysql_query($sql,  $conn);
 if (! $retval) {
     die ('Could not create users: ' . mysql_error());
 }
-echo '"<html><br /></html>" . users inserted Successfully'
+echo '<html><br /></html>users inserted Successfully'
 
 ?>
 

@@ -15,6 +15,6 @@ $retval = mysql_query($sql,  $conn);
 if (! $retval) {
     die ('Could not create table: ' . mysql_error());
 }
-echo '"<html><br /></html>" . users Table Created Successfully'
+echo '<html><br /></html>users Table Created Successfully'
 
 ?>
