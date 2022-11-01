@@ -24,7 +24,17 @@ This HR System uses custom fonts downloaded from the internet as shown below:
 "Glacial Indifference" and "League Spartan."
 
 -Please install the fonts located in the folder "FONTS USED" first(if not yet installed) for the best website visual experience.
-Please access the system by first opening "login.php," as it is the intended starting point when accessing the HR system.
+
+
+Please follow these steps in first time accessing our system:
+
+	1. Please open "FirstRun.php" first, as it is the intended starting point
+	when first accessing the HR system to set up the database, tables, and accounts.
+
+	2. Run "login.php' and enter admin credentials to have an access to all of the HR system capabilities.
+
+After these steps, you may freely explore the system.
+
 
 
 
