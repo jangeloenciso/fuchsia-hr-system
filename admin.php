@@ -43,7 +43,7 @@ include_once('templates/header.php');
 
     <div class="card3">
 
-      <a href="routes/search.php"><button type="button" class="auv-btn">Search <img src="img/view.png" /></button></a>
+      <a href="routes/search.php"><button type="button" class="auv-btn">Search <img src="img/search.png" /></button></a>
 
       <hr style="border-top: 2px solid #205a68;">
       <center>
