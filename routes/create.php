@@ -111,7 +111,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   color: aliceblue;">Employee ID</p>
       <input type="text" name="id" placeholder="ID" required>
     </center>
-<br /><br /><br /><br />
+    <br /><br /><br /><br />
     <center>
       <p style="color: #fee9ee; font-family: 'League Spartan'!important;"> WORK INFORMATION </p>
     </center>

@@ -16,7 +16,7 @@ include_once('templates/header.php');
 
     <div class="card2">
 
-      <a href="routes/view_emp.php"><button type="button" class="auv-btn">View <img src="img/view.png" /></button></a>
+      <a href="routes/view_emp.php"><button type="button" class="auv-btn">View All <img src="img/view.png" /></button></a>
 
       <hr style="border-top: 2px solid #205a68;">
       <center>

@@ -40,9 +40,24 @@ include_once('templates/header.php');
 
     </div>
 
+
     <div class="card3">
 
-      <a href="routes/view.php"><button type="button" class="auv-btn">View <img src="img/view.png" /></button></a>
+      <a href="routes/search.php"><button type="button" class="auv-btn">Search <img src="img/view.png" /></button></a>
+
+      <hr style="border-top: 2px solid #205a68;">
+      <center>
+        <p>
+          Search for a specific employee's record.
+        </p>
+      </center>
+
+    </div>
+
+
+    <div class="card4">
+
+      <a href="routes/view.php"><button type="button" class="auv-btn">View All <img src="img/view.png" /></button></a>
 
       <hr style="border-top: 2px solid #205a68;">
       <center>
