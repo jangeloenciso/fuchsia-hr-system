@@ -1,0 +1,154 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: auto;
+  background-color: #fee9ee;
+}
+
+.container {
+  width: 95%;
+  background-color: #fee9ee;
+  padding-bottom: 25px;
+  border-radius: 2em 2em 2em 2em;
+}
+
+.top {
+  display: flex;
+  justify-content: center !important;
+  height: 20%;
+  width: 100%;
+  background-color: #fee9ee;
+  color: #205a68 !important;
+  font-family: "League Spartan" !important;
+  font-size: 40px !important;
+}
+
+.main {
+  width: 100%;
+  height: auto;
+  background-color: #205a68;
+  font-family: "Glacial Indifference";
+}
+
+.id-top {
+  color: white;
+  background-color: #1f4852;
+  border-radius: 2em 2em 0px 0px;
+  display: flex;
+  justify-content: center;
+  padding: 5px 0px;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 10px 0px;
+}
+
+.mid-pic-name{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 10px 0px;
+}
+
+.mrk {
+  background: #4c6d75 !important;
+  border-radius: 5px 5px 5px 5px;
+  color: white;
+  padding: 1px 5px;
+  margin: 2px 0px;
+}
+
+.mid-mini1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 5px;
+  grid-row-gap: 0px;
+  justify-items: center;
+  color: white;
+  background-color: #1f4852;
+  padding: 5px 0px;
+  margin-bottom: 10px;
+  width: 40%;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.mini-1 {
+  grid-area: 1 / 1 / 2 / 2;
+}
+.mini-2 {
+  grid-area: 1 / 2 / 2 / 3;
+}
+
+.mid-mini2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 5px;
+  grid-row-gap: 0px;
+  justify-items: center;
+  color: white;
+  background-color: #1f4852;
+  padding: 5px 0px;
+  margin-bottom: 15px;
+  width: 40%;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.mini-3 {
+  grid-area: 1 / 1 / 2 / 2;
+}
+.mini-4 {
+  grid-area: 1 / 2 / 2 / 3;
+}
+
+.container-bot {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+  background-color: #1f4852;
+  color: white;
+  justify-items: center;
+  margin-bottom: 5px;
+  padding: 8px 5px;
+  width: 80%;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.bot1 {
+  grid-area: 1 / 1 / 2 / 2;
+}
+.bot2 {
+  grid-area: 2 / 1 / 3 / 2;
+}
+.bot3 {
+  grid-area: 3 / 1 / 4 / 2;
+}
+.bot4 {
+  grid-area: 1 / 2 / 3 / 3;
+}
+.bot5 {
+  grid-area: 3 / 2 / 4 / 3;
+}
+
+.delete-btn {
+  color: white;
+  background-color: #e15963;
+  border: 0;
+  padding: 10px 0px;
+  margin-bottom: 10px;
+  width: 20%;
+  border-radius: 0px 0px 10px 10px;
+  transition: cubic-bezier(0.18, 0.89, 0.32, 1.28) 0.3s, transform 0.2s ease-out;
+}
+
+.delete-btn:hover {
+  background-color: white;
+  color: black;
+}

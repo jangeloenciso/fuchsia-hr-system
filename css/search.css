@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: auto;
+  background-color: #fee9ee;
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+  background-color: #205a68;
+}
+
+.main-top {
+  display: flex;
+  justify-content: center !important;
+  height: 20vh;
+  width: 100%;
+  background-color: #fee9ee;
+  color: #205a68 !important;
+  font-family: "League Spartan" !important;
+  font-size: 40px !important;
+}
+
+.card {
+  width: 420px;
+  height: 250px;
+  background-color: #1f4852;
+  padding: 6px;
+  border-radius: 10px;
+}
+
+.main-bot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  width: 100%;
+}
+
+input[type="text"] {
+  width: 340px;
+  padding: 12px 20px;
+  font-family: "Glacial Indifference";
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 1em;
+  align-items: center;
+}
+
+input[type="submit"] {
+  width: 380px;
+  height: 50px;
+  margin: 50px 0px 0px 0px;
+  font-size: 22px;
+  border-radius: 2em;
+  border: none;
+  background-color: #fee9ee;
+  color: #205a68;
+  font-family: "League Spartan";
+  transition: cubic-bezier(0.18, 0.89, 0.32, 1.28) 0.3s, transform 0.2s ease-out;
+}
+
+input[type="submit"]:hover {
+  background: #091e23;
+  color: white;
+}

@@ -4,7 +4,7 @@ $PageCss = '../CSS/view.css';
 include_once('../templates/header.php');
 ?>
 
-<p class="top">VIEW</p>
+<p class="top">VIEW ALL</p>
 <div class="main">
   <br>
   <?php
