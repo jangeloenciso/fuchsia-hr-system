@@ -1,38 +1,38 @@
 <?php
-  $PageTitle="Update Record";
-  $PageCss = '../CSS/update.css';
-  include_once('../templates/header.php'); 
-  require_once "../config.php";
+$PageTitle = "Update Record";
+$PageCss = '../CSS/update.css';
+include_once('../templates/header.php');
+require_once "../config.php";
 
 if (!$conn) {
-    die("Connection failed: " . mysqli_connect_error());
+  die("Connection failed: " . mysqli_connect_error());
+}
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  if (!get_magic_quotes_gpc()) {
+    $id = addslashes($_POST['id']);
+    $first_name = addslashes($_POST['first_name']);
+    $last_name = addslashes($_POST['last_name']);
+    $age = addslashes($_POST['age']);
+    $gender = addslashes($_POST['gender']);
+    $home_address = addslashes($_POST['home_address']);
+    $contact_number = addslashes($_POST['contact_number']);
+    $email_address = addslashes($_POST['email_address']);
+    $company_position = addslashes($_POST['company_position']);
+    $monthly_salary = addslashes($_POST['monthly_salary']);
+  } else {
+    $id = $_POST['id'];
+    $first_name = $_POST['first_name'];
+    $last_name = $_POST['last_name'];
+    $age = $_POST['age'];
+    $gender = $_POST['gender'];
+    $home_address = $_POST['home_address'];
+    $contact_number = $_POST['contact_number'];
+    $email_address = $_POST['email_address'];
+    $company_position = $_POST['company_position'];
+    $monthly_salary = $_POST['monthly_salary'];
   }
-  if($_SERVER["REQUEST_METHOD"] == "POST"){
-    if (! get_magic_quotes_gpc()) {
-      $id = addslashes($_POST['id']);
-      $first_name = addslashes($_POST['first_name']);
-      $last_name = addslashes($_POST['last_name']);
-      $age = addslashes($_POST['age']);
-      $gender = addslashes($_POST['gender']);
-      $home_address = addslashes($_POST['home_address']);
-      $contact_number = addslashes($_POST['contact_number']);
-      $email_address = addslashes($_POST['email_address']);
-      $company_position = addslashes($_POST['company_position']);
-      $monthly_salary = addslashes($_POST['monthly_salary']);
-    } else {
-      $id = $_POST['id'];
-      $first_name = $_POST['first_name'];
-      $last_name = $_POST['last_name'];
-      $age = $_POST['age'];
-      $gender = $_POST['gender'];
-      $home_address = $_POST['home_address'];
-      $contact_number = $_POST['contact_number'];
-      $email_address = $_POST['email_address'];
-      $company_position = $_POST['company_position'];
-      $monthly_salary = $_POST['monthly_salary'];
-    }
 
-    $sql = "UPDATE `employees` SET
+  $sql = "UPDATE `employees` SET
       first_name = '$first_name', 
       last_name = '$last_name',
       age = '$age',
@@ -44,16 +44,19 @@ if (!$conn) {
       monthly_salary = '$monthly_salary' WHERE id=$id
     ";
 
-    if (mysqli_query($conn, $sql)) {
-      $home = 'http://localhost/fuchsia/index.php';
-      echo "<p style='color: #205a68; font-family: 'League Spartan''>" . "Record updated successfully" . "</p>";
-      exit();
-    } else {
-      echo "Error: " . $sql . "<br>" . $conn->error;
-    }
+  if (mysqli_query($conn, $sql)) {
+    $home = 'http://localhost/fuchsia/index.php';
+    echo '<div class="result_view_container">';
+    echo '<div class="result_view">Record updated successfully</div>';
+    echo '<button class="btn-back" onclick="history.go(-2)">CONFIRM</button>';
+    echo '</div>';
+    exit();
+  } else {
+    echo "Error: " . $sql . "<br>" . $conn->error;
+  }
 
-    mysqli_close($conn);
-  } 
+  mysqli_close($conn);
+}
 ?>
 
 <div class="main">
@@ -95,8 +98,8 @@ if (!$conn) {
       </div>
     </div>
 
-    
-<br /><br /><br /><br />
+
+    <br /><br /><br /><br />
     <center>
       <p style="color: #fee9ee; font-family: 'League Spartan'!important;"> WORK INFORMATION </p>
     </center>

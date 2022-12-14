@@ -59,7 +59,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
   if (mysqli_query($conn, $sql)) {
-    echo "<p style='color: #205a68; font-family: 'League Spartan''>" . "New record created successfully" . "</p>";
+    echo '<div class="result_view_container">';
+    echo '<div class="result_view">New record created successfully</div>';
+    echo '<button class="btn-back" onclick="history.go(-2)">CONFIRM</button>';
+    echo '</div>';
+
     exit();
   } else {
     echo "Error: " . $sql . "<br>" . $conn->error;

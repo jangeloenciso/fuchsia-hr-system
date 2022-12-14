@@ -82,7 +82,7 @@ include_once('../templates/header.php');
         echo '</center>';
       }
     } else {
-      echo "EMPTY";
+      echo '<div class="result_view">NO RECORDS FOUND </div>';
     }
   }
   ?>

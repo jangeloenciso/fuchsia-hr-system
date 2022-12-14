@@ -152,3 +152,10 @@ img {
   background-color: white;
   color: black;
 }
+
+.result_view {
+  display: flex;
+  justify-content: center;
+  color: #fee9ee;
+  font-size: 20px;
+}

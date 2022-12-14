@@ -81,7 +81,7 @@ require_once "../config.php";
 
 
 
-      echo '<a href="delete.php?id=' . $row['id'] . '"><button type="button" class="delete-btn">Delete</button></a>';
+      echo '<a href="search_delete.php?id=' . $row['id'] . '"><button type="button" class="delete-btn">Delete</button></a>';
       echo "<br />";
       echo "<br />";
       echo "<br />";
@@ -89,8 +89,7 @@ require_once "../config.php";
       echo '</center>';
     }
   } else {
-    echo "0 resultaaas";
-    echo $id;
+    echo '<div class="result_view">Record does not exist for ID # ' . $id . '</div>';
   }
   $conn->close();
   ?>

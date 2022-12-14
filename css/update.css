@@ -92,3 +92,34 @@ body {
     font-family: "Glacial Indifference";
     color: aliceblue;
   }
+
+  .result_view_container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .result_view {
+    color: #051d40;
+    font-size: 20px;
+  }
+  
+  .btn-back {
+    width: 380px;
+    height: 50px;
+    margin: 50px 0px 0px 0px;
+    font-size: 22px;
+    border-radius: 2em;
+    border: none;
+    background-color: #205a68;
+    color: #fee9ee;
+    font-family: "League Spartan";
+    transition: cubic-bezier(0.18, 0.89, 0.32, 1.28) 0.3s, transform 0.2s ease-out;
+  }
+  
+  .btn-back:hover {
+    background: #091e23;
+    color: white;
+  }
