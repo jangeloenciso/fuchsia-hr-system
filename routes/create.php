@@ -66,7 +66,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     exit();
   } else {
-    echo "Error: " . $sql . "<br>" . $conn->error;
+    echo '<center>';
+    echo '<div class="result_view">Error: ID# ' . $id . ' already exists </div>';
+    echo '</center>';
   }
 
   mysqli_close($conn);
